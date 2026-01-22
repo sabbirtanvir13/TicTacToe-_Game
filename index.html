@@ -1,23 +1,31 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TicTacToe Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <main>
+     
         <header id="header">
-            <div class="player player-active" id="">
-                X
+         
+            <div id="choose-container">
+                <div class="player player-active" id="xplayerDisplay">X</div>
+                 <h3 id="titleHeader">Choose One</h3>
+                <div class="player" id="oplayerDisplay">O</div>
             </div>
-            <h3 id="titleHeader">Choose One </h3>
-                <div class="player" id="oplayerDisplay">
-             O
-            </div>
+
+           
         </header>
-          <div id="board">
+
+        <div id="board">
             <div class="cell"></div>
             <div class="cell"></div>
             <div class="cell"></div>
@@ -27,11 +35,16 @@
             <div class="cell"></div>
             <div class="cell"></div>
             <div class="cell"></div>
-          </div>
-          <button id="restartBtn">
-            Restart
-          </button>
+        </div>
+
+        <button id="restartBtn">Restart</button>
+        <div id="confetti-container"></div>
+
+      
+        <audio id="winSound" src="win.mp3"></audio>
+        <audio id="loseSound" src="lose.mp3"></audio>
     </main>
     <script src="script.js"></script>
 </body>
+
 </html>
